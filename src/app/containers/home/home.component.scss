@@ -1,0 +1,12 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 5rem);
+    img {
+        width: 15rem;
+        height: 15rem;
+        border-radius: 50%;
+        border: 7px solid var(--bg-primary);
+    }
+}

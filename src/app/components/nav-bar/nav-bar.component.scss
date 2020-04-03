@@ -40,10 +40,12 @@
   margin-left: 1rem;
 }
 
-.nav-link svg {
+.nav-link i {
   width: 2rem;
   min-width: 2rem;
   margin: 0 1.5rem;
+  font-size: 1.8rem;
+  color: #fff;
 }
 
 .fa-primary {
@@ -71,7 +73,7 @@
   width: 100%;
 }
 
-.logo svg {
+.logo i {
   transform: rotate(0deg);
   transition: var(--transition-speed);
 }
@@ -83,7 +85,7 @@
   transition: var(--transition-speed);
 }
 
-.navbar:hover .logo svg {
+.navbar:hover .logo i {
   transform: rotate(-180deg);
 }
 
@@ -131,7 +133,7 @@
     display: inline;
   }
 
-  .navbar:hover .logo svg {
+  .navbar:hover .logo i {
     margin-left: 12rem;
   }
 

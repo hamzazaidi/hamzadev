@@ -22,6 +22,15 @@
         border: 7px solid #8787ff;
         box-shadow: 10px 10px 85px 0px #655f94;
     }
+    .typing-text {
+        display: flex;
+        .initail-pre-phrease {
+            font-weight: 100;
+            color: #fff;
+            font-size: 2.5rem;
+            margin-right: 1rem;
+        }
+    }
 }
 
 /* Small screens */

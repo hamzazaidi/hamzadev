@@ -17,7 +17,7 @@
     width: 5px;
     height: 40px;
     background-color: #ffffff;
-    animation: blink 0.5s step-end infinite;
+    animation: blink 600ms step-end infinite;
 }
 
 @keyframes blink {

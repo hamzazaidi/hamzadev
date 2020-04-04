@@ -28,9 +28,6 @@ function initTypeText(phrases, textEle, cursorEle) {
 
     // If full sentence has been displayed then start to delete the sentence after some time
     if (text === _CONTENT[_PART]) {
-      // Hide the cursor
-      _CURSOR.style.display = 'none';
-
       clearInterval(_INTERVAL_VAL);
       setTimeout(() => {
         _INTERVAL_VAL = setInterval(Delete, 50);
@@ -61,13 +58,13 @@ function initTypeText(phrases, textEle, cursorEle) {
       // Start to display the next sentence after some time
       setTimeout(() => {
         _CURSOR.style.display = 'inline-block';
-        _INTERVAL_VAL = setInterval(Type, 100);
+        _INTERVAL_VAL = setInterval(Type, 200);
       }, 200);
     }
   }
 
   // Start the typing effect on load
-  _INTERVAL_VAL = setInterval(Type, 100);
+  _INTERVAL_VAL = setInterval(Type, 200);
 }
 
 @Component({

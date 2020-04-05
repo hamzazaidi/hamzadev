@@ -1,7 +1,7 @@
 <nav class="navbar">
     <ul class="navbar-nav">
         <li class="logo">
-            <a href="#" class="nav-link">
+            <a class="nav-link" routerLink="/home">
                 <span class="link-text logo-text">{{ name }}</span>
                 <i class="icofont-arrow-right"></i>
             </a>
@@ -9,7 +9,7 @@
 
         <ng-container *ngFor="let item of navItems">
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a class="nav-link" [routerLink]="item.location">
                     <i class="{{ item.icon }}"></i>
                     <span class="link-text">{{ item.title }}</span>
                 </a>

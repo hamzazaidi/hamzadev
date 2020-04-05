@@ -1,10 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import * as fromComponents from './components';
 import * as fromContainers from './containers';
+
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import * as fromContainers from './containers';
   ],
   imports: [
     BrowserModule,
+    RouterModule,
     AppRoutingModule
   ],
   providers: [],

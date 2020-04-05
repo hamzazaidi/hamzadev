@@ -12,9 +12,9 @@ export class AppComponent {
   navItems$: Observable<NavItem[]> = of([
     { icon: 'icofont-home', title: 'Home', location: '/home' },
     { icon: 'icofont-settings-alt', title: 'Resume', location: '/resume' },
-    { icon: 'icofont-eye', title: 'Portfolio', location: '' },
-    { icon: 'icofont-blogger', title: 'Blog', location: '' },
-    { icon: 'icofont-contacts', title: 'Contact', location: '' },
+    { icon: 'icofont-eye', title: 'Portfolio', location: '/portfolio' },
+    { icon: 'icofont-blogger', title: 'Blog', location: '/blog' },
+    { icon: 'icofont-contacts', title: 'Contact', location: '/contact' },
   ]);
   fullName$: Observable<string> = of('Hamza Zaidi');
 }

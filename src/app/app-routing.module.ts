@@ -16,6 +16,21 @@ const routes: Routes = [
     data: { title: 'Resume' }
   },
   {
+    path: 'portfolio',
+    component: ResumeComponent,
+    data: { title: 'Portfolio' }
+  },
+  {
+    path: 'blog',
+    component: ResumeComponent,
+    data: { title: 'Blog' }
+  },
+  {
+    path: 'contact',
+    component: ResumeComponent,
+    data: { title: 'Contact' }
+  },
+  {
     path: '',
     redirectTo: '/home',
     pathMatch: 'full'

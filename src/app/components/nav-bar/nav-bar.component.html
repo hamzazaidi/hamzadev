@@ -9,7 +9,7 @@
 
         <ng-container *ngFor="let item of navItems">
             <li class="nav-item">
-                <a class="nav-link" [routerLink]="item.location">
+                <a class="nav-link" [routerLink]="item.location" routerLinkActive="active">
                     <i class="{{ item.icon }}"></i>
                     <span class="link-text">{{ item.title }}</span>
                 </a>

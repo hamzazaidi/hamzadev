@@ -1,8 +1,8 @@
 <div class="main">
     <img src="assets/avatar.jpg" alt="">
     <h1>
-        <span class="firstName">Hamza</span>
-        <span class="lastName">Zaidi</span>
+        <span class="firstName">{{ firstName$ | async }}</span>
+        <span class="lastName">{{ lastName$ | async }}</span>
     </h1>
     <div class="typing-text">
         <app-typing-text [phrases]="phrases$ | async"></app-typing-text>

@@ -16,4 +16,5 @@ export class AppComponent {
     { icon: 'icofont-blogger', title: 'Blog', location: '' },
     { icon: 'icofont-contacts', title: 'Contact', location: '' },
   ]);
+  fullName$: Observable<string> = of('Hamza Zaidi');
 }

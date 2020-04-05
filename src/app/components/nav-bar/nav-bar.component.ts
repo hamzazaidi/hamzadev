@@ -9,6 +9,7 @@ import { Observable } from 'rxjs';
 })
 export class NavBarComponent implements OnInit {
 
+  @Input() name: string;
   @Input() navItems: NavItem[];
   constructor() { }
 

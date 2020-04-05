@@ -7,7 +7,8 @@ import { Observable, of } from 'rxjs';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
+  firstName$: Observable<string> = of('Hamza');
+  lastName$: Observable<string> = of('Zaidi');
   phrases$: Observable<string[]> = of([
     'Javscript',
     'HTML',

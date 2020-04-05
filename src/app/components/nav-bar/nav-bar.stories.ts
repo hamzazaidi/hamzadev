@@ -5,6 +5,7 @@ export default { title: 'Navigation bar' };
 export const navBar = () => ({
     component: NavBarComponent,
     props: {
+        name: 'John Bob',
         navItems: [
             { icon: 'icofont-home', title: 'Home', location: '' },
             { icon: 'icofont-settings-alt', title: 'Resume', location: '' },

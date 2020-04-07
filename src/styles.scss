@@ -4,14 +4,16 @@
   font-family: "Ropa Sans";
   --text-primary: #b6b6b6;
   --text-secondary: #ececec;
+  --bg-primary-light: #3c3d52;
   --bg-primary: #23232e;
+  --bg-primary-dark: #353546;
   --bg-secondary: #141418;
   --transition-speed: 600ms;
 }
 
 body {
   color: black;
-  background-color: #3c3d52;
+  background-color: var(--bg-primary-light);
   margin: 0;
   padding: 0;
 }

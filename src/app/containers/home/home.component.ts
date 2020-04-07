@@ -11,10 +11,10 @@ import { Profile } from 'src/app/models/profile';
 export class HomeComponent {
   profile$: Observable<Profile> = this.profileSvc.getProfile();
   phrases$: Observable<string[]> = of([
-    'Javscript',
-    'HTML',
-    'CSS3',
-    'Node'
+    'Web Developer',
+    'Blogger',
+    'Open Source Contributor',
+    'UI UX Designer'
   ]);
 
   constructor(private profileSvc: ProfileService) { }

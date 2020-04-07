@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavItem } from './models/nav';
 import { of, Observable } from 'rxjs';
+import { ProfileService } from './services/profile.service';
+import { Profile } from './models/profile';
 
 @Component({
   selector: 'app-root',
@@ -16,5 +18,6 @@ export class AppComponent {
     { icon: 'icofont-blogger', title: 'Blog', location: '/blog' },
     { icon: 'icofont-contacts', title: 'Contact', location: '/contact' },
   ]);
-  fullName$: Observable<string> = of('Hamza Zaidi');
+  profile$: Observable<Profile> = this.profileSvc.getProfile();
+  constructor(private profileSvc: ProfileService) { }
 }

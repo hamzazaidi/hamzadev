@@ -1,14 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable, of } from 'rxjs';
+import { ProfileService } from 'src/app/services/profile.service';
+import { Profile } from 'src/app/models/profile';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit {
-  firstName$: Observable<string> = of('Hamza');
-  lastName$: Observable<string> = of('Zaidi');
+export class HomeComponent {
+  profile$: Observable<Profile> = this.profileSvc.getProfile();
   phrases$: Observable<string[]> = of([
     'Javscript',
     'HTML',
@@ -16,8 +17,5 @@ export class HomeComponent implements OnInit {
     'Node'
   ]);
 
-  constructor() { }
-  ngOnInit(): void {
-  }
-
+  constructor(private profileSvc: ProfileService) { }
 }

@@ -1,5 +1,6 @@
 <main>
-    <app-nav-bar [name]="fullName$ | async" [navItems]="navItems$ | async"></app-nav-bar>
+    <app-nav-bar name="{{ (profile$ | async)?.firstName + ' ' + (profile$ | async)?.lastName }}"
+        [navItems]="navItems$ | async"></app-nav-bar>
     <section>
         <router-outlet></router-outlet>
     </section>

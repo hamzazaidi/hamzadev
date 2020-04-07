@@ -1,4 +1,5 @@
 $height: 15px;
+$cursor-color: #fff;
 #container {
     text-align: center;
     height: $height;
@@ -7,7 +8,7 @@ $height: 15px;
 #text {
     display: inline-block;
     vertical-align: middle;
-    color: #adadad;
+    color: var(--text-primary);
     letter-spacing: 2px;
     font-size: 1rem;
 }
@@ -17,7 +18,7 @@ $height: 15px;
     vertical-align: middle;
     width: 5px;
     height: $height;
-    background-color: #ffffff;
+    background-color: $cursor-color;
     animation: blink 600ms step-end infinite;
 }
 
@@ -27,6 +28,6 @@ $height: 15px;
         background-color: transparent;
     }
     50% {
-        background-color: #ffffff;
+        background-color: $cursor-color;
     }
 }

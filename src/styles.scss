@@ -18,18 +18,6 @@ body {
   padding: 0;
 }
 
-body::-webkit-scrollbar {
-  width: 0.25rem;
-}
-
-body::-webkit-scrollbar-track {
-  background: #1e1e24;
-}
-
-body::-webkit-scrollbar-thumb {
-  background: #6649b8;
-}
-
 /* Small screens */
 @media only screen and (max-width: 600px) {
   body {

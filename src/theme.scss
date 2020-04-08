@@ -1,0 +1,28 @@
+$text-primary: #b6b6b6;
+$text-secondary: #ececec;
+$bg-secondary: #141418;
+$bg-primary-red: #850000;
+$bg-primary-red-light: lighten($bg-primary-red, 50%);
+$bg-primary-red-dark: darken($bg-primary-red, 20%);
+
+$bg-primary-blue: #2c0193;
+$bg-primary-blue-light: lighten($bg-primary-blue, 50%);
+$bg-primary-blue-dark: darken($bg-primary-blue, 20%);
+
+:root {
+  --text-primary: #{$text-primary};
+  --text-secondary: #{$text-secondary};
+  --bg-primary-light: #{$bg-primary-red-light};
+  --bg-primary: #{$bg-primary-red};
+  --bg-primary-dark: #{$bg-primary-red-dark};
+  --bg-secondary: #{$bg-secondary};
+}
+
+.blue {
+  --text-primary: #{$text-primary};
+  --text-secondary: #{$text-secondary};
+  --bg-primary-light: #{$bg-primary-blue-light};
+  --bg-primary: #{$bg-primary-blue};
+  --bg-primary-dark: #{$bg-primary-blue-dark};
+  --bg-secondary: #{$bg-secondary};
+}

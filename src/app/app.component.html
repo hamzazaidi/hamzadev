@@ -1,4 +1,11 @@
-<main>
+<main class="red">
+    <!-- <div class="theme-picker">
+        <ul>
+            <li><span class="red"></span></li>
+            <li><span class="green"></span></li>
+            <li><span class="yellow"></span></li>
+        </ul>
+    </div> -->
     <app-nav-bar name="{{ (profile$ | async)?.firstName + ' ' + (profile$ | async)?.lastName }}"
         [navItems]="navItems$ | async"></app-nav-bar>
     <section>

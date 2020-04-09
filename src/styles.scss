@@ -12,7 +12,7 @@ body {
   background-color: var(--bg-primary-light);
   margin: 0;
   padding: 0;
-  transition: background-color var(--transition-speed) linear;
+  transition: background-color 200ms linear;
 }
 
 /* Small screens */

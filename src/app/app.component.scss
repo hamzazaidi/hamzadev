@@ -1,3 +1,8 @@
+$bg-primary-purple: #23232e;
+$bg-primary-red: #38100d;
+$bg-primary-blue: #1b3f8b;
+$bg-primary-green: #024614;
+$bg-primary-yellow: #674d00;
 main {
     position: relative;
     .theme-picker {
@@ -8,6 +13,7 @@ main {
             width: 100%;
             position: absolute;
             padding: 0;
+            z-index: 2;
             li {
                 margin: 0 16px;
                 span {
@@ -18,14 +24,20 @@ main {
                     flex-grow: 1;
                     display: block;
                     cursor: pointer;
+                    &.purple {
+                        background-color: $bg-primary-purple;
+                    }
                     &.red {
-                        background-color: red;
+                        background-color: $bg-primary-red;
+                    }
+                    &.blue {
+                        background-color: $bg-primary-blue;
                     }
                     &.green {
-                        background-color: green;
+                        background-color: $bg-primary-green;
                     }
                     &.yellow {
-                        background-color: yellow;
+                        background-color: $bg-primary-yellow;
                     }
                 }
             }

@@ -1,11 +1,13 @@
 <main>
-    <!-- <div class="theme-picker">
+    <div class="theme-picker">
         <ul>
-            <li><span class="red"></span></li>
-            <li><span class="green"></span></li>
-            <li><span class="yellow"></span></li>
+            <li><span class="purple" (click)="change('purple')"></span></li>
+            <li><span class="red" (click)="change('red')"></span></li>
+            <li><span class="blue" (click)="change('blue')"></span></li>
+            <li><span class="green" (click)="change('green')"></span></li>
+            <li><span class="yellow" (click)="change('yellow')"></span></li>
         </ul>
-    </div> -->
+    </div>
     <app-nav-bar name="{{ (profile$ | async)?.firstName + ' ' + (profile$ | async)?.lastName }}"
         [navItems]="navItems$ | async"></app-nav-bar>
     <section>

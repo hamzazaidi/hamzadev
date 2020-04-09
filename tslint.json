@@ -1,12 +1,12 @@
 {
   "extends": "tslint:recommended",
   "rules": {
-    "align": {
-      "options": [
-        "parameters",
-        "statements"
-      ]
-    },
+    // "align": {
+    //   "options": [
+    //     "parameters",
+    //     "statements"
+    //   ]
+    // },
     "array-type": false,
     "arrow-return-shorthand": true,
     "curly": true,
@@ -45,7 +45,7 @@
       140
     ],
     "member-ordering": [
-      true,
+      false,
       {
         "order": [
           "static-field",

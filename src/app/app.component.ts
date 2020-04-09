@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { NavItem } from './models/nav';
 import { of, Observable } from 'rxjs';
 import { ProfileService } from './services/profile.service';
 import { Profile } from './models/profile';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -20,5 +21,13 @@ export class AppComponent {
     { icon: 'icofont-contacts', title: 'Contact', location: '/contact' },
   ]);
   profile$: Observable<Profile> = this.profileSvc.getProfile();
-  constructor(private profileSvc: ProfileService) { }
+  constructor(
+    private profileSvc: ProfileService,
+    @Inject(DOCUMENT) private document: Document
+  ) { }
+
+  change(cls: string): void {
+    this.document.body.className = cls;
+  }
+
 }

@@ -1,7 +1,7 @@
 .navbar {
   position: fixed;
   background-color: var(--bg-primary);
-  transition: width 600ms ease;
+  transition: width background-color 600ms ease;
   overflow: scroll;
   z-index: 1;
 }

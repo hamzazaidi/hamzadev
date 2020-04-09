@@ -1,13 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* You can add global styles to this file, and also import other style files */
 :root {
   font-size: 16px;
   font-family: "Ropa Sans";
-  --text-primary: #b6b6b6;
-  --text-secondary: #ececec;
-  --bg-primary-light: #3c3d52;
-  --bg-primary: #23232e;
-  --bg-primary-dark: #353546;
-  --bg-secondary: #141418;
   --transition-speed: 600ms;
 }
 
@@ -36,25 +32,4 @@ body {
   main {
     margin-left: 5rem;
   }
-}
-
-.dark {
-  --text-primary: #b6b6b6;
-  --text-secondary: #ececec;
-  --bg-primary: #23232e;
-  --bg-secondary: #141418;
-}
-
-.light {
-  --text-primary: #1f1f1f;
-  --text-secondary: #000000;
-  --bg-primary: #ffffff;
-  --bg-secondary: #e4e4e4;
-}
-
-.solar {
-  --text-primary: #576e75;
-  --text-secondary: #35535c;
-  --bg-primary: #fdf6e3;
-  --bg-secondary: #f5e5b8;
 }

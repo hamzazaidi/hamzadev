@@ -1,8 +1,4 @@
-$bg-primary-purple: #23232e;
-$bg-primary-red: #38100d;
-$bg-primary-blue: #1b3f8b;
-$bg-primary-green: #024614;
-$bg-primary-yellow: #674d00;
+@import "./scss/theme.scss";
 main {
     position: relative;
     .theme-picker {

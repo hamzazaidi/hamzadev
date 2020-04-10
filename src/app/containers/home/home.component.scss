@@ -40,12 +40,18 @@
 }
 
 /* Small screens */
-@media only screen and (max-width: 600px) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
     .main {
         height: calc(100vh - 5rem);
     }
     .polygon-wrap-1 {
         display: none;
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
+    .polygon-wrap-1 {
+        height: 3rem;
     }
 }
 

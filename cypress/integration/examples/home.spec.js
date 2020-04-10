@@ -24,13 +24,11 @@ describe('Given a user on the Mobile Device Vertical', () => {
       cy.visit('/home');
     })
     it('Then they will see Nav bar without arrow, Avatar and Typing text', () => {
-      //cy.get('.navbar-nav .logo').should('not.be.visible');
       cy.get('.navbar-nav').should('be.visible');
       cy.get('img').should('be.visible');
       cy.get('.firstName').should('have.text', 'Hamza');
       cy.get('.lastName').should('have.text', 'Zaidi');
       cy.get('.typing-text').should('be.visible');
-      cy.get('.polygon-wrap-1').should('not.be.visible');
     })
   })
 })
@@ -43,7 +41,6 @@ describe('Given a user on the Mobile Device Horizontal', () => {
       cy.visit('/home');
     })
     it('Then they will see Nav bar without arrow, Avatar and Typing text', () => {
-      //cy.get('.navbar-nav .logo').should('not.be.visible');
       cy.get('.navbar-nav').should('be.visible');
       cy.get('img').should('be.visible');
       cy.get('.firstName').should('have.text', 'Hamza');

@@ -11,7 +11,9 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v1
         with:
-          start: npm run start
+          start: npm run serve
           wait-on: http://localhost:4200
+          config_file: cypress.json
+          spec: "cypress/**/*"
         env:
           CYPRESS_baseUrl: http://localhost:4200

@@ -1,7 +1,1 @@
-{{ skills$ | async | json }}
-
-
-<ng-container *ngFor="let skill of skills$ | async">
-    {{ skill.name }}
-    <img src="assets/{{ skill.icon }}" alt="">
-</ng-container>
+<app-skills [skills]="skills$ | async"></app-skills>

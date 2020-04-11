@@ -1,0 +1,19 @@
+@import "../../scss/theme.scss";
+.container {
+    background-color: var(--bg-primary);
+    border: 1px solid var(--bg-primary-dark);
+    > div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        img {
+            height: 40px;
+            width: 40px;
+            margin-right: 10px;
+        }
+        div {
+            color: $text-secondary;
+        }
+    }
+}

@@ -11,7 +11,14 @@ export class SkillsService {
 
   getSkills(): Observable<Skill[]> {
     const skills: Skill[] = [
-      { name: 'Javascript', icon: 'javascript.png' }
+      { name: 'Javascript', icon: 'javascript' },
+      { name: 'CSS', icon: 'css' },
+      { name: 'HTML', icon: 'html' },
+      { name: 'Cypress', icon: 'cypress' },
+      { name: 'JQuery', icon: 'JQuery' },
+      { name: 'React', icon: 'react' },
+      { name: 'NGRX', icon: 'ngrx' },
+      { name: 'TypeScript', icon: 'typescript' }
     ];
     return of(skills);
   }

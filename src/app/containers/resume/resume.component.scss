@@ -1,13 +1,13 @@
-.main {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: scroll;
-}
+// .main {
+//     height: 100vh;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     overflow: scroll;
+// }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
-    .main {
-        height: calc(100vh - 5rem);
-    }
-}
+// @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+//     .main {
+//         height: calc(100vh - 5rem);
+//     }
+// }

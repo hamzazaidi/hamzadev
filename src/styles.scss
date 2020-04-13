@@ -11,24 +11,28 @@ body {
   margin: 0;
   padding: 0;
   transition: background-color 200ms linear;
-}
-
-/* Small screens */
-@media only screen and (max-width: 600px) {
-  body {
-    height: calc(100vh - 5rem);
-  }
-  main {
-    margin-left: 0;
-  }
-}
-
-/* Large screens */
-@media only screen and (min-width: 600px) {
-  body {
-    height: 100vh;
-  }
+  height: 100vh;
   main {
     margin-left: 5rem;
   }
 }
+
+// /* Small screens */
+// @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+//   body {
+//     height: calc(100vh - 5rem);
+//   }
+//   main {
+//     margin-left: 0;
+//   }
+// }
+
+// /* Large screens */
+// @media only screen and (min-width: 600px) {
+//   body {
+//     height: 100vh;
+//   }
+//   main {
+//     margin-left: 5rem;
+//   }
+// }

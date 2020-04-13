@@ -10,7 +10,11 @@ export class SkillsComponent implements OnInit {
 
   constructor() { }
   @Input() skills: Skill[];
+  toolsAndTechnology: Skill[];
+  industryKnowledge: Skill[];
   ngOnInit(): void {
+    this.toolsAndTechnology = this.skills.filter(s => s.type === 'ToolsAndTechnology');
+    this.industryKnowledge = this.skills.filter(s => s.type === 'IndustryKnowledge');
   }
 
 }

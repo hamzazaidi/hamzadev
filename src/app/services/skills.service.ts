@@ -30,7 +30,18 @@ export class SkillsService {
       { name: 'Express', icon: 'express', type: 'ToolsAndTechnology' },
       { name: 'git', icon: 'git', type: 'ToolsAndTechnology' },
       { name: 'Github', icon: 'github', type: 'ToolsAndTechnology' },
-      { name: 'Netlify', icon: 'netlify', type: 'ToolsAndTechnology' }
+      { name: 'Netlify', icon: 'netlify', type: 'ToolsAndTechnology' },
+      { name: 'Unit Testing', icon: '', type: 'IndustryKnowledge' },
+      { name: 'Scrum', icon: '', type: 'IndustryKnowledge' },
+      { name: 'Web Development', icon: '', type: 'IndustryKnowledge' },
+      { name: 'Web Design', icon: '', type: 'IndustryKnowledge' },
+      { name: 'Agile Methodologies', icon: '', type: 'IndustryKnowledge' },
+      { name: 'Software Development', icon: '', type: 'IndustryKnowledge' },
+      { name: 'Knowledge Sharing', icon: '', type: 'IndustryKnowledge' },
+      { name: 'Functional Programming', icon: '', type: 'IndustryKnowledge' },
+      { name: 'UI Automation', icon: '', type: 'IndustryKnowledge' },
+      { name: 'Agile Web Development', icon: '', type: 'IndustryKnowledge' },
+      { name: 'Scaled Agile Framework', icon: '', type: 'IndustryKnowledge' },
     ];
     return of(skills);
   }

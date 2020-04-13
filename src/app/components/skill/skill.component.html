@@ -1,4 +1,4 @@
 <div class="skill">
-    <img src="assets/{{ skill.icon }}.png" alt="">
+    <img *ngIf="skill.icon" src="assets/{{ skill.icon }}.png" alt="">
     <div>{{ skill.name }}</div>
 </div>

@@ -1,33 +1,23 @@
 @import "../../scss/theme.scss";
-.container {
-    background-color: var(--bg-primary);
-    border: 1px solid var(--bg-primary-dark);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    > div {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 2rem;
-        flex-grow: 1;
-        width: 10rem;
-        border: 1px solid #2e2e3c;
-        &:hover {
-            background: var(--bg-primary-light);
-        }
-        img {
-            height: 60px;
-            width: 60px;
-            margin-right: 10px;
-        }
-        div {
-            font-size: 1.5rem;
-            color: $text-secondary;
-        }
-    }
-}
+// .skills-container {
+//     background-color: var(--bg-primary);
+//     border: 1px solid var(--bg-primary-dark);
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     > div {
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: center;
+//         align-items: center;
+//         padding: 2rem;
+//         flex-grow: 1;
+//         width: 10rem;
+//         border: 1px solid #2e2e3c;
+//         transition: background 200ms ease-in;
+//         &:hover {
+//             background: var(--bg-primary-light);
+//         }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
-}
+//     }
+// }

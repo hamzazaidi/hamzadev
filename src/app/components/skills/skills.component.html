@@ -1,7 +1,7 @@
 <div>
     <h1>{{ title }}</h1>
-    <div class="skill-container">
-        <div *ngFor="let skill of list">
+    <div class="row">
+        <div class="col-md-6 col-xl-3" *ngFor="let skill of list">
             <app-skill [skill]="skill"></app-skill>
         </div>
     </div>

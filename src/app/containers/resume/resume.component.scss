@@ -42,8 +42,13 @@
 .credentials {
     display: flex;
     border-top: 3px solid var(--primary-100);
-    border-top: 3px solid var(--primary-100);
+    border-bottom: 3px solid var(--primary-100);
     & > div {
+        border-right: 3px solid var(--primary-100);
         flex-grow: 1;
+        padding: 2rem;
+        &:last-child {
+            border-right: 0;
+        }
     }
 }

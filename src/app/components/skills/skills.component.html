@@ -1,14 +1,7 @@
-<div class="container-fluid no-gutters">
-    <h1>Tools and Technologies</h1>
-    <div class="row no-gutters">
-        <div class="col-6 col-lg-2 col-xl-1" *ngFor="let skill of toolsAndTechnology">
-            <app-skill [skill]="skill"></app-skill>
-        </div>
-    </div>
-
-    <h1>Industry Knowledge</h1>
-    <div class="row no-gutters">
-        <div class="col-6 col-lg-3 col-xl-2" *ngFor="let skill of industryKnowledge">
+<div>
+    <h1>{{ title }}</h1>
+    <div class="skill-container">
+        <div *ngFor="let skill of list">
             <app-skill [skill]="skill"></app-skill>
         </div>
     </div>

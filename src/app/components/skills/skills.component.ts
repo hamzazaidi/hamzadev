@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Skill } from 'src/app/models/skill';
+import { Skill, SkillType } from 'src/app/models/skill';
 
 @Component({
   selector: 'app-skills',
@@ -10,11 +10,13 @@ export class SkillsComponent implements OnInit {
 
   constructor() { }
   @Input() skills: Skill[];
-  toolsAndTechnology: Skill[];
+  @Input() type: SkillType;
+  @Input() title: string;
+  list: Skill[];
   industryKnowledge: Skill[];
+
   ngOnInit(): void {
-    this.toolsAndTechnology = this.skills.filter(s => s.type === 'ToolsAndTechnology');
-    this.industryKnowledge = this.skills.filter(s => s.type === 'IndustryKnowledge');
+    this.list = this.skills.filter(s => s.type === this.type);
   }
 
 }

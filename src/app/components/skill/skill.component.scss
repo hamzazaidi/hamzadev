@@ -6,16 +6,16 @@
     padding: 1rem;
     transition: background 200ms ease-in;
     &:hover {
-        background: var(--bg-primary-dark);
+        background: var(--primary-500);
     }
 }
 
 img {
-    height: 40px;
-    width: 40px;
+    height: 20px;
+    width: 20px;
     margin-right: 10px;
 }
 div {
     font-size: 1rem;
-    color: $text-secondary;
+    color: $text-200;
 }

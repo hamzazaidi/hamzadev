@@ -1,6 +1,6 @@
 .navbar {
   position: fixed;
-  background-color: var(--bg-primary);
+  background-color: var(--primary-200);
   transition: all 600ms ease;
   overflow: scroll;
   z-index: 1;
@@ -45,7 +45,7 @@
   display: flex;
   align-items: center;
   height: 5rem;
-  color: var(--text-primary);
+  color: var(--text-100);
   text-decoration: none;
   filter: grayscale(100%) opacity(0.7);
   transition: var(--transition-speed);
@@ -54,8 +54,8 @@
 .nav-link:hover,
 .nav-link.active {
   filter: grayscale(0%) opacity(1);
-  background: var(--bg-secondary);
-  color: var(--text-secondary);
+  background: var(--primary-400);
+  color: var(--text-300);
 }
 
 .link-text {
@@ -76,8 +76,8 @@
   text-transform: uppercase;
   margin-bottom: 1rem;
   text-align: center;
-  color: var(--text-secondary);
-  background: var(--bg-secondary);
+  color: var(--text-300);
+  background: var(--primary-400);
   font-size: 1.5rem;
   letter-spacing: 0.3ch;
   width: 100%;

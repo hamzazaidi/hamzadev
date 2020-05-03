@@ -1,12 +1,12 @@
 .top-banner {
     position: relative;
-    background-color: var(--bg-primary-dark);
+    background-color: var(--secondary);
     height: 200px;
     width: 100%;
-    border-bottom: 3px solid var(--bg-primary-light);
+    border-bottom: 3px solid var(--primary-100);
     margin-bottom: 50px;
     img {
-        border: 3px solid var(--bg-primary-light);
+        border: 3px solid var(--primary-100);
         position: absolute;
         left: 50%;
         bottom: -50px;
@@ -23,23 +23,26 @@
     margin: 0 1.5rem;
     text-align: center;
     .firstName {
-        color: var(--text-primary);
+        color: var(--text-100);
         margin-right: 1rem;
     }
     .lastName {
-        color: var(--text-secondary);
+        color: var(--text-500);
     }
 }
 
 .about-me {
-    color: var(--text-primary);
+    color: var(--text-100);
     font-size: 1rem;
     width: 50%;
     margin: auto;
+    margin-bottom: 50px;
 }
 
 .credentials {
     display: flex;
+    border-top: 3px solid var(--primary-100);
+    border-top: 3px solid var(--primary-100);
     & > div {
         flex-grow: 1;
     }

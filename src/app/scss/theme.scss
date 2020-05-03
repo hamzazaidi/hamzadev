@@ -1,95 +1,60 @@
-$lightRatio: 5%;
-$darkRatio: 5%;
-$text-primary: #b6b6b6;
-$text-secondary: #ececec;
+$lightRatio: 0.03;
+$darkRatio: 0.03;
 
-$bg-primary-purple: #23232e;
-$bg-primary-purple-light: lighten($bg-primary-purple, $lightRatio);
-$bg-primary-purple-dark: darken($bg-primary-purple, $darkRatio);
-$bg-secondary-purple: #141418;
-
-$bg-primary-red: #38100d;
-$bg-primary-red-light: lighten($bg-primary-red, $lightRatio);
-$bg-primary-red-dark: darken($bg-primary-red, $darkRatio);
-$bg-secondary-red: #141418;
-
-$bg-primary-blue: #192642;
-$bg-primary-blue-light: lighten($bg-primary-blue, $lightRatio);
-$bg-primary-blue-dark: darken($bg-primary-blue, $darkRatio);
-$bg-secondary-blue: #141418;
-
-$bg-primary-green: #0e2915;
-$bg-primary-green-light: lighten($bg-primary-green, $lightRatio);
-$bg-primary-green-dark: darken($bg-primary-green, $darkRatio);
-$bg-secondary-green: #141418;
-
-$bg-primary-yellow: #674d00;
-$bg-primary-yellow-light: lighten($bg-primary-yellow, $lightRatio);
-$bg-primary-yellow-dark: darken($bg-primary-yellow, $darkRatio);
-$bg-secondary-yellow: #141418;
-
-.purple {
-  --text-primary: #{$text-primary};
-  --text-secondary: #{$text-secondary};
-  --bg-primary-light: #{$bg-primary-purple-light};
-  --bg-primary: #{$bg-primary-purple};
-  --bg-primary-dark: #{$bg-primary-purple-dark};
-  --bg-secondary: #{$bg-secondary-purple};
+@function percentage($value) {
+  $result: $value * 100;
+  @return $result;
 }
 
-.red {
-  --text-primary: #{$text-primary};
-  --text-secondary: #{$text-secondary};
-  --bg-primary-light: #{$bg-primary-red-light};
-  --bg-primary: #{$bg-primary-red};
-  --bg-primary-dark: #{$bg-primary-red-dark};
-  --bg-secondary: #{$bg-secondary-red};
+$base-text: #b6b6b6;
+$text-100: lighten($base-text, percentage($lightRatio * 8));
+$text-200: lighten($base-text, percentage($lightRatio));
+$text-300: $base-text;
+$text-400: darken($base-text, percentage($darkRatio));
+$text-500: darken($base-text, percentage($darkRatio * 2));
+
+// Purple
+$base-purple: #23232e;
+$primary-purple-100: lighten($base-purple, percentage($lightRatio * 2));
+$primary-purple-200: lighten($base-purple, percentage($lightRatio));
+$primary-purple-300: $base-purple;
+$primary-purple-400: darken($base-purple, percentage($darkRatio));
+$primary-purple-500: darken($base-purple, percentage($darkRatio * 2));
+$secondary-purple: #141418;
+
+// Blue
+$base-blue: #192642;
+$primary-blue-100: lighten($base-blue, percentage($lightRatio * 2));
+$primary-blue-200: lighten($base-blue, percentage($lightRatio));
+$primary-blue-300: $base-blue;
+$primary-blue-400: darken($base-blue, percentage($darkRatio));
+$primary-blue-500: darken($base-blue, percentage($darkRatio * 2));
+$secondary-blue: #141418;
+
+.purple {
+  --text-100: #{$text-100};
+  --text-200: #{$text-200};
+  --text-300: #{$text-300};
+  --text-400: #{$text-400};
+  --text-500: #{$text-500};
+  --primary-100: #{$primary-purple-100};
+  --primary-200: #{$primary-purple-200};
+  --primary-300: #{$primary-purple-300};
+  --primary-400: #{$primary-purple-400};
+  --primary-500: #{$primary-purple-500};
+  --secondary: #{$secondary-purple};
 }
 
 .blue {
-  --text-primary: #{$text-primary};
-  --text-secondary: #{$text-secondary};
-  --bg-primary-light: #{$bg-primary-blue-light};
-  --bg-primary: #{$bg-primary-blue};
-  --bg-primary-dark: #{$bg-primary-blue-dark};
-  --bg-secondary: #{$bg-secondary-blue};
-}
-
-.green {
-  --text-primary: #{$text-primary};
-  --text-secondary: #{$text-secondary};
-  --bg-primary-light: #{$bg-primary-green-light};
-  --bg-primary: #{$bg-primary-green};
-  --bg-primary-dark: #{$bg-primary-green-dark};
-  --bg-secondary: #{$bg-secondary-green};
-}
-
-.yellow {
-  --text-primary: #{$text-primary};
-  --text-secondary: #{$text-secondary};
-  --bg-primary-light: #{$bg-primary-yellow-light};
-  --bg-primary: #{$bg-primary-yellow};
-  --bg-primary-dark: #{$bg-primary-yellow-dark};
-  --bg-secondary: #{$bg-secondary-yellow};
-}
-
-.box {
-  display: flex;
-  background: var(--bg-secondary);
-  padding: 20px;
-  margin-top: 10px;
-  span {
-    margin-right: 10px;
-    width: 100%;
-    height: 50px;
-  }
-  span:nth-child(1) {
-    background: var(--bg-primary);
-  }
-  span:nth-child(2) {
-    background: var(--bg-primary-light);
-  }
-  span:nth-child(3) {
-    background: var(--bg-primary-dark);
-  }
+  --text-100: #{$text-100};
+  --text-200: #{$text-200};
+  --text-300: #{$text-300};
+  --text-400: #{$text-400};
+  --text-500: #{$text-500};
+  --primary-100: #{$primary-blue-100};
+  --primary-200: #{$primary-blue-200};
+  --primary-300: #{$primary-blue-300};
+  --primary-400: #{$primary-blue-400};
+  --primary-500: #{$primary-blue-500};
+  --secondary: #{$secondary-blue};
 }

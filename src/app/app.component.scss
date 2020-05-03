@@ -21,19 +21,10 @@ main {
                     display: block;
                     cursor: pointer;
                     &.purple {
-                        background-color: $bg-primary-purple;
-                    }
-                    &.red {
-                        background-color: $bg-primary-red;
+                        background-color: $primary-purple-300;
                     }
                     &.blue {
-                        background-color: $bg-primary-blue;
-                    }
-                    &.green {
-                        background-color: $bg-primary-green;
-                    }
-                    &.yellow {
-                        background-color: $bg-primary-yellow;
+                        background-color: $primary-blue-300;
                     }
                 }
             }

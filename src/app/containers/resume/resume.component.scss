@@ -1,12 +1,14 @@
+$border: 2px solid var(--primary-100);
+
 .top-banner {
     position: relative;
     background-color: var(--secondary);
     height: 200px;
     width: 100%;
-    border-bottom: 3px solid var(--primary-100);
+    border-bottom: $border;
     margin-bottom: 50px;
     img {
-        border: 3px solid var(--primary-100);
+        border: $border;
         position: absolute;
         left: 50%;
         bottom: -50px;
@@ -41,10 +43,10 @@
 
 .credentials {
     display: flex;
-    border-top: 3px solid var(--primary-100);
-    border-bottom: 3px solid var(--primary-100);
+    border-top: $border;
+    border-bottom: $border;
     & > div {
-        border-right: 3px solid var(--primary-100);
+        border-right: $border;
         flex-grow: 1;
         padding: 2rem;
         &:last-child {

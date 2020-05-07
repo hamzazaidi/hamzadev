@@ -11,18 +11,20 @@
         JavaScript, HTML, C#, Firebase, Unit Testing, C++, Agile Methodologies, and jQuery. Strong engineering
         professional with a Master’s Degree focused in Computer Software Engineering from Penn State University.
     </div>
-    <div class="credentials">
-        <div class="experience">
-            <app-skills [skills]="skills$ | async" type="ToolsAndTechnology" title="Tools and Technologies">
-            </app-skills>
-        </div>
-        <div class="skills-technical">
-            <app-skills [skills]="skills$ | async" type="ToolsAndTechnology" title="Tools and Technologies">
-            </app-skills>
-        </div>
-        <div class="skills-industry">
-            <app-skills [skills]="skills$ | async" type="IndustryKnowledge" title="Industry Knowledge">
-            </app-skills>
+    <div class="credentials container-fluid">
+        <div class="row">
+            <div class="experience col-xl-4 col-md-6">
+                <app-skills [skills]="skills$ | async" type="ToolsAndTechnology" title="Tools and Technologies">
+                </app-skills>
+            </div>
+            <div class="skills-technical col-xl-4 col-md-6">
+                <app-skills [skills]="skills$ | async" type="ToolsAndTechnology" title="Tools and Technologies">
+                </app-skills>
+            </div>
+            <div class="skills-industry col-xl-4 col-md-12">
+                <app-skills [skills]="skills$ | async" type="IndustryKnowledge" title="Industry Knowledge">
+                </app-skills>
+            </div>
         </div>
     </div>
     <app-qualifications [qualifications]="qualifications$ | async"></app-qualifications>

@@ -1,4 +1,4 @@
-$border: 2px solid var(--primary-100);
+$border: 1px solid var(--primary-100);
 
 .top-banner {
     position: relative;
@@ -42,15 +42,20 @@ $border: 2px solid var(--primary-100);
 }
 
 .credentials {
-    display: flex;
     border-top: $border;
     border-bottom: $border;
-    & > div {
-        border-right: $border;
-        flex-grow: 1;
-        padding: 2rem;
-        &:last-child {
-            border-right: 0;
+    .row {
+        & > div {
+            padding: 2rem;
         }
+    }
+    .experience {
+        background-color: var(--primary-300);
+    }
+    .skills-technical {
+        background-color: var(--primary-400);
+    }
+    .skills-industry {
+        background-color: var(--primary-500);
     }
 }

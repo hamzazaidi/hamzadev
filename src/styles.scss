@@ -6,8 +6,8 @@
 
 body {
   font-family: var(--font-family);
-  color: black;
   background-color: var(--primary-300);
+  animation: fade-in 0.3s ease;
   margin: 0;
   padding: 0;
   transition: background-color 200ms linear;
@@ -25,6 +25,15 @@ body {
   > [class*="col-"] {
     padding-right: 0;
     padding-left: 0;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 

@@ -6,7 +6,7 @@
         <span class="firstName">{{ (profile$ | async)?.firstName }}</span>
         <span class="lastName">{{ (profile$ | async)?.lastName }}</span>
     </h1>
-    <div class="about-me">
+    <div class="about-me container-fluid">
         Experienced Engineer with a demonstrated history of working in the computer software industry. Skilled in
         JavaScript, HTML, C#, Firebase, Unit Testing, C++, Agile Methodologies, and jQuery. Strong engineering
         professional with a Master’s Degree focused in Computer Software Engineering from Penn State University.
@@ -14,8 +14,14 @@
     <div class="credentials container-fluid">
         <div class="row">
             <div class="experience col-xl-4 col-md-6">
-                <app-skills [skills]="skills$ | async" type="ToolsAndTechnology" title="Tools and Technologies">
-                </app-skills>
+                <div class="timeline">
+                    <h1>Education</h1>
+                    <ng-container *ngFor="let q of qualifications$ | async">
+                        <app-credential time="{{ q.yearStart }} - {{ q.yearEnd }}" [company]="q.institute"
+                            [title]="q.degree"></app-credential>
+                    </ng-container>
+
+                </div>
             </div>
             <div class="skills-technical col-xl-4 col-md-6">
                 <app-skills [skills]="skills$ | async" type="ToolsAndTechnology" title="Tools and Technologies">
@@ -27,7 +33,4 @@
             </div>
         </div>
     </div>
-    <app-qualifications [qualifications]="qualifications$ | async"></app-qualifications>
-
-
 </div>

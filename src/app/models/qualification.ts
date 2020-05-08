@@ -4,4 +4,4 @@ export interface Qualification {
     degree: string;
     yearStart: string;
     yearEnd: string;
-}
+};
